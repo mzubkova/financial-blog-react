@@ -1,0 +1,27 @@
+.card {
+  position: relative;
+  background-color: #112b3e !important;
+  width: 420px;
+  height: 450px;
+  text-align: center;
+  margin: 0 35px 73px 16px;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 31.65px;
+  padding: 10px 0 5px;
+  text-decoration: none;
+}
+
+.card__link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 16px;
+  bottom: 15px;
+  position: absolute;
+  left: 23%;
+}
