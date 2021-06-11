@@ -30,3 +30,8 @@
   font-weight: 700;
   line-height: 18px;
 }
+
+.articles__img {
+  width: auto;
+  height: 450px;
+}
