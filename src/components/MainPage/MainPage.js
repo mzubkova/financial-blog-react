@@ -1,22 +1,12 @@
 import React from "react";
-import CardTemp from "../Card";
+import Card from "../Card";
 import "./MainPage.css";
-import data from "../../data/data.json";
 
-const MainPage = () => {
-  return (
-    <div className="main-wrapper">
-      {data.map((card) => (
-        <CardTemp
-          src={card.img}
-          title={card.description}
-          {...card}
-          key={card.id}
-        />
-      ))}
-      ;
-    </div>
-  );
+const MainPage = (props) => {
+  const createCard = () => {
+    return props.data.map((el) => <Card data={el} key={el.description} />);
+  };
+  return <div className="main-wrapper">{createCard()}</div>;
 };
 
 export default MainPage;

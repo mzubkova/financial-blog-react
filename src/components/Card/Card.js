@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 import "./Card.css";
 import Col from "react-bootstrap/Col";
 
-const Card = ({ id, img, title, link }) => {
+const Card = (props) => {
+  const { id, imageUrl, title } = props.data;
   return (
-    <NavLink to={`/articles/${id}`}>
+    <NavLink to={`/article/${id}`}>
       <Col className="card">
-          <img src={img} alt=""></img>
-          <div className="card__title">{title}</div>
-          <a className="card__link">{link}</a>
+        <img className="card__img" src={imageUrl} alt="image"></img>
+        <div className="card__title">{title}</div>
       </Col>
     </NavLink>
   );

@@ -12,7 +12,7 @@
   font-weight: 700;
   color: #fff;
   line-height: 31.65px;
-  padding: 10px 0 5px;
+  padding: 10px 10px 5px;
   text-decoration: none;
 }
 
@@ -24,4 +24,9 @@
   bottom: 15px;
   position: absolute;
   left: 23%;
+}
+
+.card__img {
+  width: 420px;
+  height: 300px;
 }
